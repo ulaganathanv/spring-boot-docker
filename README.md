@@ -9,7 +9,7 @@
 ## Commands to list and remove the containers.
 * $ docker ps - This will list the active available containers.
 * $ docker ps -a - This will list all the containers.
-* $ docker -rm <container id> - This will remove the particular container. 
+* $ docker rm <container id> - This will remove the particular container. 
 
 ## Commands to list and remove the images.
 * $ docker images - This will list the images.
