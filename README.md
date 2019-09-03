@@ -22,7 +22,7 @@
 To check we can execute the below command to see the release version of Ubuntu.  
 cat /etc/*release*  
 * $ docker run -d centos sleep 20 - This will run in the background.  
-* $ docker exec <container name> <command> - To execute a command within the running container.  
+* $ docker exec &lt;container name&gt; &lt;command&gt; - To execute a command within the running container.  
   e.g docker exec <container name> cat /etc/hosts  
 
 
