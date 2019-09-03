@@ -16,4 +16,8 @@
 * $ docker rmi <image id> - This will remove the particular image. The associated container should be removed before removing the image.
   
 ## Commands for reference
-* $ docker run -it ubuntu bash - This will start the container in interactive mode and it will allow to interact with bash of the container i.e the bash session inside the container. 
+* $ docker run -it ubuntu bash - This will start the container in interactive mode and it will allow to interact with bash of the container i.e the bash session inside the container.  
+To check we can execute the below command to see the release version of Ubuntu.  
+cat /etc/*release*  
+
+
