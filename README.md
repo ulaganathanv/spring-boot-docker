@@ -26,6 +26,6 @@ cat /etc/*release*
 * $ docker exec &lt;container name&gt; &lt;command&gt; - To execute a command within the running container.  
   e.g docker exec &lt;container name&gt; cat /etc/hosts  
 * $ docker run -p 80:5000 spring-boot-docker - This will map the local port 80 to container port 5000. This concept is called ***port mapping***. 
-
-
+* $ docker run -v /opt/datadir:/var/lib/mysql mysql - This will persist the data in docker host from the container. This concept is called ***volume mapping***.
+* $ docker run -i spring-boot-docker - This will wait for an input from the docker host i.e Standard Input from docker host.
 
