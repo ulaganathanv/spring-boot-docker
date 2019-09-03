@@ -22,8 +22,10 @@
 To check we can execute the below command to see the release version of Ubuntu.  
 cat /etc/*release*  
 * $ docker run -d centos sleep 20 - This will run in the background.  
+* $ docker run ubuntu:17.04 - This will help to run the container of specific version. This concept is called ***tagging***. Otherwise docker will pull the latest version. 
 * $ docker exec &lt;container name&gt; &lt;command&gt; - To execute a command within the running container.  
   e.g docker exec &lt;container name&gt; cat /etc/hosts  
+* $ docker run -p 80:5000 spring-boot-docker - This will map the local port 80 to container port 5000. This concept is called ***port mapping***. 
 
 
 
