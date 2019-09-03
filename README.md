@@ -14,3 +14,6 @@
 ## Commands to list and remove the images.
 * $ docker images - This will list the images.
 * $ docker rmi <image id> - This will remove the particular image. The associated container should be removed before removing the image.
+  
+## Commands for reference
+* $ docker run -it ubuntu bash - This will start the container in interactive mode and it will allow to interact with bash of the container i.e the bash session inside the container. 
