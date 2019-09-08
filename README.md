@@ -24,7 +24,9 @@
 ## Commands for Kubernets Deployment
 * $ kubectl create deployment spring-boot-docker --image ulaginda/spring-boot-docker - To deploy the application to kubernets.  
 * $ kubectl expose deployment spring-boot-docker --type=LoadBalancer --port 80 --target-port 8085 - To expose the application to Internet.  
-$ kubectl scale deployment spring-boot-docker --replicas=3 - To add additional replicas.  
+* $ kubectl scale deployment spring-boot-docker --replicas=3 - To add additional replicas.  
+
+* $ kubectl run spring-boot-docker --image=ulaginda/spring-boot-docker --port=8085 - To open a port when we start the container.  
 
 ## Commands for reference - Docker
 * $ docker pull &lt;image name&gt; - To pull the image from docker hub.  
@@ -48,3 +50,5 @@ cat /etc/*release*
 * $ kubectl delete service spring-boot-docker - To delete the service.  
 * $ kubectl describe deployment spring-boot-docker - To see the deployment details.  
 * $ kubectl delete deployment spring-boot-docker - To delete the application.  
+* $ kubectl logs &lt;pod id&gt; - To see the logs of the specific pod.  
+
