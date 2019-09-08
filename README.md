@@ -16,7 +16,12 @@
 * $ docker images - This will list the images.
 * $ docker rmi &lt;image id&gt; - This will remove the particular image. The associated container should be removed before removing the image.
   
-## Commands for reference
+## Commands to tag and push the image to Docker Hub
+* $ docker build -t &lt;hub-user&gt/&lt;repo-name&gt[:&lt;tag&gt;] - To name the local images when build it.  
+* $ docker tag &lt;existing-image&gt; &lt;hub-user&gt;/&lt;repo-name&gt;[:&lt;tag&gt;] - To retag the existing local image.  
+* $ docker push &lt;hub-user&gt;/&lt;repo-name&gt;:lt;tag&gt; - To push the docker image. If the tag is not specified then the tag defaults to latest.
+
+## Commands for reference 
 * $ docker pull &lt;image name&gt; - To pull the image from docker hub.  
 * $ docker run -it ubuntu bash - This will start the container in interactive mode and it will allow to interact with bash of the container i.e the bash session inside the container.  
 To check we can execute the below command to see the release version of Ubuntu.  
