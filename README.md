@@ -43,6 +43,7 @@ cat /etc/*release*
 * $ kubectl get nodes - To see the list of nodes.  
 * $ kubectl get pods - To see the list of pods.  
 * $ kubectl get services - To see the list of services.  
+* $ kubectl describe pod spring-boot-docker - To see the pod details.  
 * $ kubectl describe service spring-boot-docker - To see the service details.  
 * $ kubectl delete service spring-boot-docker - To delete the service.  
 * $ kubectl describe deployment spring-boot-docker - To see the deployment details.  
