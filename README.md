@@ -22,16 +22,11 @@
 * $ docker push &lt;hub-user&gt;/&lt;repo-name&gt;[:&lt;tag&gt;] - To push the docker image. If the tag is not specified then the tag defaults to latest.  
 
 ## Commands for Kubernets Deployment
-* $ kubectl get nodes - To see the list of nodes.  
-* $ kubectl get pods - To see the list of pods.  
-* $ kubectl get services - To see the list of services.  
 * $ kubectl create deployment spring-boot-docker --image ulaginda/spring-boot-docker - To deploy the application to kubernets.  
 * $ kubectl expose deployment spring-boot-docker --type=LoadBalancer --port 80 --target-port 8085 - To expose the application to Internet.  
 $ kubectl scale deployment spring-boot-docker --replicas=3 - To add additional replicas.  
-$ kubectl delete service spring-boot-docker - To delete the service.  
-$ kubectl delete deployment spring-boot-docker - To delete the application.  
 
-## Commands for reference 
+## Commands for reference - Docker
 * $ docker pull &lt;image name&gt; - To pull the image from docker hub.  
 * $ docker run -it ubuntu bash - This will start the container in interactive mode and it will allow to interact with bash of the container i.e the bash session inside the container.  
 To check we can execute the below command to see the release version of Ubuntu.  
@@ -44,3 +39,10 @@ cat /etc/*release*
 * $ docker run -v /opt/datadir:/var/lib/mysql mysql - This will persist the data in docker host from the container. This concept is called ***volume mapping***.
 * $ docker run -i spring-boot-docker - This will wait for an input from the docker host i.e Standard Input from docker host.
 
+## Commands for reference - Kubernetes
+* $ kubectl get nodes - To see the list of nodes.  
+* $ kubectl get pods - To see the list of pods.  
+* $ kubectl get services - To see the list of services.  
+
+$ kubectl delete service spring-boot-docker - To delete the service.  
+$ kubectl delete deployment spring-boot-docker - To delete the application.  
