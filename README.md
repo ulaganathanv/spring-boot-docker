@@ -44,5 +44,5 @@ cat /etc/*release*
 * $ kubectl get pods - To see the list of pods.  
 * $ kubectl get services - To see the list of services.  
 
-$ kubectl delete service spring-boot-docker - To delete the service.  
-$ kubectl delete deployment spring-boot-docker - To delete the application.  
+* $ kubectl delete service spring-boot-docker - To delete the service.  
+* $ kubectl delete deployment spring-boot-docker - To delete the application.  
