@@ -17,7 +17,7 @@
 * $ docker rmi &lt;image id&gt; - This will remove the particular image. The associated container should be removed before removing the image.
   
 ## Commands to tag and push the image to Docker Hub
-* $ docker build -t &lt;hub-user&gt/&lt;repo-name&gt[:&lt;tag&gt;] - To name the local images when build it.  
+* $ docker build -t &lt;hub-user&gt;/&lt;repo-name&gt;[:&lt;tag&gt;] - To name the local images when build it.  
 * $ docker tag &lt;existing-image&gt; &lt;hub-user&gt;/&lt;repo-name&gt;[:&lt;tag&gt;] - To retag the existing local image.  
 * $ docker push &lt;hub-user&gt;/&lt;repo-name&gt;:lt;tag&gt; - To push the docker image. If the tag is not specified then the tag defaults to latest.
 
