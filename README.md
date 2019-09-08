@@ -19,7 +19,7 @@
 ## Commands to tag and push the image to Docker Hub
 * $ docker build -t &lt;hub-user&gt;/&lt;repo-name&gt;[:&lt;tag&gt;] - To name the local images when build it.  
 * $ docker tag &lt;existing-image&gt; &lt;hub-user&gt;/&lt;repo-name&gt;[:&lt;tag&gt;] - To retag the existing local image.  
-* $ docker push &lt;hub-user&gt;/&lt;repo-name&gt;:lt;tag&gt]; - To push the docker image. If the tag is not specified then the tag defaults to latest.
+* $ docker push &lt;hub-user&gt;/&lt;repo-name&gt;:&lt;tag&gt;] - To push the docker image. If the tag is not specified then the tag defaults to latest.
 
 ## Commands for reference 
 * $ docker pull &lt;image name&gt; - To pull the image from docker hub.  
